@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width:100%;
+    height:100%;
+}
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.main{
+    background-color: whitesmoke;
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+    display:grid;
+    grid-template-rows: 10% 10% 50% 20% 10%;
+    grid-template-areas: 
+    "header"
+    "search"
+    "cards"
+    "extra"
+    "footer";
+    overflow: hidden;
+
+}
+.header{
+    
+  background: lightblue;
+  grid-area: header;
+   
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;   /* icon width */
+  height: 30px;  /* icon height */
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;              /* line thickness */
+  width: 100%;              /* line length */
+  background-color: black;  /* line color */
+      /* rounded edges */
+}
+.notification-icon{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:100px;
+    height:100px;
+}
+.notification-icon i{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 30px;
+}
+#h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:5vmin;
+    font-weight: 500;
+
+}
+.search{
+    background: lightblue;
+    grid-area: search;
+    padding: 30px;
+    display: flex;
+    
+    align-items: center;
+    gap:20px;
+}
+#btn1{
+    border-radius: 10px;
+    width:25%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+}
+#btn1 i{
+    width: 80px;
+}
+
+#btn2{
+    border-radius: 10px;
+    width:25%;
+    position: relative;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+    
+}
+#btn2 h6{
+    width: 90%px;
+}
+.cards{
+    background-color: lightblue;
+    grid-area: cards;
+  
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap:2%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#box1{
+    background-color:white;
+    position: relative;
+    flex: 1 1 0;
+    width:15%;
+    height:80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#box1 img{
+    width: 90%;
+    height:90%;
+    object-fit: contain;
+}
+
+
+#box2{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:80%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+}
+#box2 img{
+    width: 90%;
+    height:90%;
+    background: white;
+    object-fit: contain;
+}
+#box3{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:80%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+}
+#box3 img{
+    width: 90%;
+    height:90%;
+    background: white;
+    object-fit: contain;
+}
+#box4{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:80%;
+      border-radius: 20px;
+       display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+}
+#box4 img{
+    width: 90%;
+    height:90%;
+    background: white;
+    object-fit: contain;
+}
+.extra{
+    background-color: lightblue;
+    grid-area: extra;
+    display: flex;
+    justify-content: center; /* Left aur Right se exact barabar distance (horizontal center) */
+    align-items: center;
+}
+#box5{
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Left aur Right se exact barabar distance (horizontal center) */
+    align-items: center;
+    gap:2%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#box5 #box1{
+    background-color:white;
+    flex:1 1 0;
+    width:15%;
+    height:85%;
+    padding: 20px;
+}
+#box5 #box2{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:85%;
+    padding: 20px;
+}
+#box5 #box3{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:85%;
+    padding: 20px;
+}
+#box5 #box4{
+    background-color:white;
+    flex:1 1 0;
+     width:15%;
+    height:85%;
+    padding: 20px;
+}
+.footer{
+    background-color:lightblue;
+    grid-area: footer;
+}
